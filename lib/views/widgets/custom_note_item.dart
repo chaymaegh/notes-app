@@ -1,14 +1,23 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class ItemNote extends StatelessWidget {
   const ItemNote({super.key});
+ 
+ //this is for random colors items
+  final data = const [Colors.white, Colors.pink, Colors.blue];
+  Color getRandomColor() {
+    Random random = Random();
+    return data[random.nextInt(data.length)];
+  }
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(top: 24, bottom: 24, left: 16),
       decoration: BoxDecoration(
-        color: Color(0xffF6C445),
+        color: getRandomColor(),
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
