@@ -4,9 +4,16 @@ import 'package:flutter/material.dart';
 
 class ItemNote extends StatelessWidget {
   const ItemNote({super.key});
- 
- //this is for random colors items
-  final data = const [Colors.white, Colors.pink, Colors.blue];
+
+  //this is for random colors items
+  final data = const [
+    Color(0xFFF6CBC0),
+    Color(0xFFF1A09E),
+    Color(0xFFF0A0A8),
+    Color(0xFFE5857B),
+    Color(0xFFF1B2B2),
+    Color(0xFFEFAA97)
+  ];
   Color getRandomColor() {
     Random random = Random();
     return data[random.nextInt(data.length)];
