@@ -18,7 +18,14 @@ class _AddNoteBottomSheetState extends State<AddNoteBottomSheet> {
         child: Column(
           children: [
             SizedBox(height: 34),
-            CustomTextField(),
+            CustomTextField(hint: "Text "),
+            SizedBox(
+              height: 16,
+            ),
+            CustomTextField(
+              hint: "Content",
+              maxLines: 5,
+            ),
           ],
         ),
       ),
