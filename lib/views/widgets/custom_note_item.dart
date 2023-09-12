@@ -31,7 +31,7 @@ class ItemNote extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           ListTile(
-            title: Text(
+            title: Text(//mcgbeeipkmelnpldkobichboakdfaeon/images/logo-vertical.svg
               "Flutter Tips",
               style: TextStyle(color: Colors.black, fontSize: 26),
             ),

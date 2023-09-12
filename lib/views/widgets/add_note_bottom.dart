@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mission_list/views/widgets/custom_text.field.dart';
 
 class AddNoteBottomSheet extends StatefulWidget {
   const AddNoteBottomSheet({super.key});
@@ -10,6 +11,17 @@ class AddNoteBottomSheet extends StatefulWidget {
 class _AddNoteBottomSheetState extends State<AddNoteBottomSheet> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Container(
+        decoration: BoxDecoration(),
+        child: Column(
+          children: [
+            SizedBox(height: 34),
+            CustomTextField(),
+          ],
+        ),
+      ),
+    );
   }
 }
