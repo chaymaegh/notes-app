@@ -1,7 +1,10 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mission_list/cubits/add_note_cubit/add_note_state.dart';
+import 'package:mission_list/models/note_model.dart';
 
 class AddNoteCubit extends Cubit<AddNoteState> {
+
+
 	AddNoteCubit() : super(AddNoteState(isLoading: true));
 	
 	Future<void> loadInitialData() async {
@@ -17,4 +20,13 @@ class AddNoteCubit extends Cubit<AddNoteState> {
 		  emit(stableState.copyWith(isLoading: false));
 		}
 	}
+addNote(NoteModel note){
+  
 }
+
+
+  
+}
+
+
+
